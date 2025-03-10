@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
 
   <!--
     - custom css link
@@ -23,9 +23,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+  <!-- MODAL CUSTOM -->
+  <div id="customModal" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-modal-close">&times;</span>
+      <img id="customModalImage" src="" alt="Imagem ampliada" />
+    </div>
+  </div>
 
   <!--
     - #MAIN
@@ -42,14 +51,14 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-photo.jpg" alt="Maycon Bruno" width="80">
+          <img src="./assets/images/my-photo.jpg" class="image-border" alt="Maycon Bruno">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Maycon Bruno">Maycon Bruno</h1>
 
-          <p class="title">Desenvolvedor de sitemas</p>
-          <p class="title">Técnico em suporte em TI.</p>
+          <p class="title" style="margin: 8px;">Desenvolvedor de sitemas</p>
+          <p class="title">Técnico em suporte em TI</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -167,19 +176,19 @@
           <li class="navbar-item">
             <button class="navbar-link active" data-nav-link>Sobre</button>
           </li>
-      
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Curriculum</button>
           </li>
-      
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-      
+
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
-<!--       
+          <!--       
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contato</button>
           </li> -->
@@ -195,30 +204,39 @@
         <header>
           <h2 class="h2 article-title">Sobre mim</h2>
         </header>
-      
+
         <section class="about-text">
           <p>👋 Olá!</p>
           <p>
-            Sou um Profissional de TI com experiência em suporte computacional, gerenciamento de redes e manutenção de dispositivos como impressoras, computadores, notebooks, celulares e desenvolvimento de soluções web. Minha trajetória é focada em entregar soluções técnicas eficientes e alinhadas às necessidades do negócio.
+            Sou um Profissional de TI com experiência em suporte computacional, gerenciamento de redes e manutenção de
+            dispositivos como impressoras, computadores, notebooks, celulares e desenvolvimento de soluções web. Minha
+            trajetória é focada em entregar soluções técnicas eficientes e alinhadas às necessidades do negócio.
           </p>
           <p>💻 Habilidades Técnicas:</p>
           <ul>
             <li>Desenvolvimento Web.</li>
             <li>Linguagens de Programação: JavaScript, PHP, MySQL, Python, Java.</li>
             <li>Frameworks: Code Igniter, Bootstrap.</li>
-            <li>Suporte e Infraestrutura: Gerenciamento de redes, manutenção de hardware e suporte técnico especializado.</li>
+            <li>Suporte e Infraestrutura: Gerenciamento de redes, manutenção de hardware e suporte técnico
+              especializado.</li>
           </ul>
+          <p></p>
           <p>🔧 O que me destaca:</p>
           <ul>
-            <li>Habilidade para resolver problemas complexos de TI, garantindo eficiência e satisfação dos usuários.</li>
-            <li>Comprometimento com o aprendizado contínuo, sempre buscando me atualizar sobre as tendências da área.</li>
+            <li>Habilidade para resolver problemas complexos de TI, garantindo eficiência e satisfação dos usuários.
+            </li>
+            <li>Comprometimento com o aprendizado contínuo, sempre buscando me atualizar sobre as tendências da área.
+            </li>
           </ul>
+          <p></p>
           <p>🚀 Objetivo:</p>
           <p>
-            Busco oportunidades para aplicar minhas habilidades em ambientes desafiadores, contribuindo para a transformação digital e a otimização de processos por meio de soluções tecnológicas inovadoras.
+            Busco oportunidades para aplicar minhas habilidades em ambientes desafiadores, contribuindo para a
+            transformação digital e a otimização de processos por meio de soluções tecnológicas inovadoras.
           </p>
           <p>
-            📚 Acredito que a tecnologia é a chave para o futuro, e estou sempre pronto para abraçar novos desafios e aprender mais.
+            📚 Acredito que a tecnologia é a chave para o futuro, e estou sempre pronto para abraçar novos desafios e
+            aprender mais.
             Vamos conectar e explorar como posso agregar valor à sua equipe ou projeto!
           </p>
         </section>
@@ -231,75 +249,76 @@
         <section class="service">
 
           <h3 class="h3 service-title">O que eu faço</h3>
-        
+
           <ul class="service-list">
 
             <li class="service-item">
-        
+
               <div class="service-icon-box">
                 <img src="./assets/images/icon-web.svg" alt="ícone de desenvolvimento web" width="40">
               </div>
-        
+
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Desenvolvimento Web</h4>
-        
+
                 <p class="service-item-text">
                   Desenvolvimento de soluções web.
                 </p>
               </div>
-        
+
             </li>
 
             <li class="service-item">
-        
+
               <div class="service-icon-box">
                 <img src="./assets/images/icon-desktop.svg" alt="ícone de desenvolvimento desktop com Java" width="40">
               </div>
-        
+
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Desktop</h4>
-        
+
                 <p class="service-item-text">
                   Desenvolvimento de soluções desktop.
                 </p>
               </div>
-        
+
             </li>
-        
+
             <li class="service-item">
-        
+
               <div class="service-icon-box">
                 <img src="./assets/images/icon-infraestructure.svg" alt="ícone de infraestrutura" width="40">
               </div>
-        
+
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Infraestrutura</h4>
-        
+
                 <p class="service-item-text">
                   Gerenciamento de redes, manutenção de hardware e suporte técnico especializado.
                 </p>
               </div>
-        
+
             </li>
-        
+
             <li class="service-item">
-        
+
               <div class="service-icon-box">
                 <img src="./assets/images/icon-music.svg" alt="ícone de musica" width="40">
               </div>
-        
+
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Música</h4>
-        
+
                 <p class="service-item-text">
-                  Como hobby, toco violão, teclado, baixo e bateria, atividades que me trazem grande satisfação pessoal e me permitem explorar minha paixão pela música.
+                  Como hobby, toco violão, teclado, baixo e bateria, atividades que me trazem grande satisfação pessoal
+                  e me permitem explorar minha paixão pela música.
                 </p>
               </div>
-        
+
             </li>
-        
+
           </ul>
-        
+
         </section>
 
 
@@ -399,41 +418,41 @@
 
           <!-- <section class="testimonials-modal"> -->
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
 
-            <!-- <div class="modal-img-wrapper">
+          <!-- <div class="modal-img-wrapper">
               <figure class="modal-avatar-box"> -->
-                <!-- <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img> -->
-              <!-- </figure>
+          <!-- <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img> -->
+          <!-- </figure>
 
               <img src="./assets/images/icon-quote.svg" alt="ícone de citação">
             </div> -->
 
-            <!-- <div class="modal-content"> -->
-<!-- 
+          <!-- <div class="modal-content"> -->
+          <!-- 
               <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
 
               <time datetime="2021-06-14">14 de junho de 2021</time> -->
 
-              <!-- <div data-modal-text>
+          <!-- <div data-modal-text>
                 <p>
                   Richard foi contratado para criar uma identidade corporativa. Ficamos muito satisfeitos com o trabalho realizado. Ele tem muita experiência e está muito preocupado com as necessidades do cliente. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div> -->
 
-            <!-- </div> -->
+          <!-- </div> -->
 
           <!-- </section> -->
 
-        <!-- </div> -->
+          <!-- </div> -->
 
 
-        <!--
+          <!--
           - clients
         -->
-<!-- 
+          <!-- 
         <section class="clients">
 
           <h3 class="h3 clients-title"></h3>
@@ -478,7 +497,7 @@
           </ul>
         
         </section> -->
-        
+
       </article>
 
 
@@ -491,184 +510,222 @@
         <header>
           <h2 class="h2 article-title">Currículo</h2>
         </header>
-      
+
         <section class="timeline">
-      
+
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-      
+
             <h3 class="h3">Formação</h3>
           </div>
-      
+
           <ol class="timeline-list">
-      
+
             <li class="timeline-item">
-      
+
               <h4 class="h4 timeline-item-title">Faculdade Santa Marcelina</h4>
-      
+
               <span>2022 — 2024</span>
-      
+
               <p class="timeline-text">
-                Possuo formação em Análise e Desenvolvimento de Sistemas, um curso de 3 anos que me proporcionou conhecimentos sólidos em programação, gestão de projetos, banco de dados e desenvolvimento de software. Essa base técnica me permite atuar de forma eficiente na criação e manutenção de sistemas computacionais.
+                Possuo formação em Análise e Desenvolvimento de Sistemas, um curso de 3 anos que me proporcionou
+                conhecimentos sólidos em programação, gestão de projetos, banco de dados e desenvolvimento de software.
+                Essa base técnica me permite atuar de forma eficiente na criação e manutenção de sistemas
+                computacionais.
               </p>
-      
+
             </li>
-      
-            <li class="timeline-item">
-      
-              <h4 class="h4 timeline-item-title">Microlins</h4>
-      
-              <span>2018 — 2019</span>
-      
-              <p class="timeline-text">
-                Concluí um curso de informática essencial, que me proporcionou conhecimentos básicos em ferramentas de produtividade, como pacote Office (Word, Excel, PowerPoint), navegação na internet e conceitos fundamentais de tecnologia. Essa base me permite utilizar a tecnologia de forma eficiente no ambiente de trabalho e no cotidiano.
-              </p>
-      
-            </li>
-      
+
           </ol>
-      
+          <br>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Microlins</h4>
+
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text">
+                Concluí um curso de informática essencial, que me proporcionou conhecimentos básicos em ferramentas de
+                produtividade, como pacote Office (Word, Excel, PowerPoint), navegação na internet e conceitos
+                fundamentais de tecnologia. Essa base me permite utilizar a tecnologia de forma eficiente no ambiente de
+                trabalho e no cotidiano.
+              </p>
+
+            </li>
+
+          </ol>
+
         </section>
-      
+
         <section class="timeline">
-      
+
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-      
+
             <h3 class="h3">Experiência</h3>
           </div>
-      
+
           <ol class="timeline-list">
-      
+
             <li class="timeline-item">
-      
+
+              <h4 class="h3">Prefeitura de Rosário da Limeira</h4>
+
+
               <h4 class="h4 timeline-item-title">Técnico Administrativo</h4>
-      
+
               <span>Jan 2025 — Presente</span>
-      
+
               <p class="timeline-text">
-                Responsável pelo controle de entrada e saída de produtos, garantindo precisão nos lançamentos; organização e gestão de estoque, incluindo inventários e conferência de materiais; emissão de relatórios de movimentação e apoio à gestão de compras; e atendimento às solicitações de materiais, com foco em agilidade e eficiência.
+                Responsável pelo controle de entrada e saída de produtos, garantindo precisão nos lançamentos;
+                organização e gestão de estoque, incluindo inventários e conferência de materiais; emissão de relatórios
+                de movimentação e apoio à gestão de compras; e atendimento às solicitações de materiais, com foco em
+                agilidade e eficiência.
               </p>
-      
+
             </li>
-      
+
+
+
             <li class="timeline-item">
-      
+
               <h4 class="h4 timeline-item-title">Diretor Dpto de informática</h4>
-      
+
               <span>Jul 2023 — Dez 2024</span>
-      
+
               <p class="timeline-text">
-                Atuei nas secretarias do município, prestando serviços como suporte técnico computacional, suporte a impressoras, suporte relacionado a redes, auxílio na instalação de circuitos de CFTV, e demais atividades de suporte técnico e infraestrutura de TI.
+                Atuei nas secretarias do município, prestando serviços como suporte técnico computacional, suporte a
+                impressoras, suporte relacionado a redes, auxílio na instalação de circuitos de CFTV, e demais
+                atividades de suporte técnico e infraestrutura de TI.
               </p>
-      
+
             </li>
-      
+
+
             <li class="timeline-item">
-      
+
               <h4 class="h4 timeline-item-title">Técnico administrativo</h4>
-      
+
               <span>Jan 2023 — Jul 2023</span>
-      
+
               <p class="timeline-text">
-                Responsável pelo registro de funcionários no ponto eletrônico, cadastro de novos colaboradores no sistema, atualização de máquinas com as novas matrículas, e coleta e atualização de pontos no sistema.
+                Responsável pelo registro de funcionários no ponto eletrônico, cadastro de novos colaboradores no
+                sistema, atualização de máquinas com as novas matrículas, e coleta e atualização de pontos no sistema.
               </p>
-      
+
             </li>
 
             <li class="timeline-item">
-      
+
               <h4 class="h4 timeline-item-title">Estágiario de TI</h4>
-      
+
               <span>Out 2022 — Dez 2022</span>
-      
-              <p class="timeline-text">
-                Realizei formatação de computadores, resolução de problemas relacionados a hardware e software, montagem de máquinas, cabeamento estruturado de redes metropolitanas, instalação e configuração de sistemas de gestão ERP, manutenção de servidores Linux com FreeBSD e Windows Server, e manutenção e configuração de servidores em nuvem com AWS.
-              </p>
-      
-            </li>
 
-            <li class="timeline-item">
-      
-              <h4 class="h4 timeline-item-title">EZ Phone</h4>
-      
-              <span>Mai 2022 — Jun 2022</span>
-      
               <p class="timeline-text">
-                Realizei manutenção de smartphones, atendimento ao cliente com foco em resolução de problemas e satisfação do usuário, e atuei como auxiliar de atacado, garantindo a organização e eficiência.
+                Realizei formatação de computadores, resolução de problemas relacionados a hardware e software, montagem
+                de máquinas, cabeamento estruturado de redes metropolitanas, instalação e configuração de sistemas de
+                gestão ERP, manutenção de servidores Linux com FreeBSD e Windows Server, e manutenção e configuração de
+                servidores em nuvem com AWS.
               </p>
-      
-            </li>
 
-            <li class="timeline-item">
-      
-              <h4 class="h4 timeline-item-title">Costureiro</h4>
-      
-              <span>Mai 2021 - Mai 2022</span>
-      
-              <p class="timeline-text">
-                Atuei em linha de produção e como ajudante de confecção, garantindo a eficiência dos processos e o cumprimento das metas de produção.
-              </p>
-      
             </li>
-      
           </ol>
-      
+          <br>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Técnico em Manutenção de celulares</h4>
+
+              <span>Mai 2022 — Jun 2022</span>
+
+              <p class="timeline-text">
+                Realizei manutenção de smartphones, atendimento ao cliente com foco em resolução de problemas e
+                satisfação do usuário, e atuei como auxiliar de atacado, garantindo a organização e eficiência.
+              </p>
+
+            </li>
+          </ol>
+
+          <br>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+
+              <h4 class="h4 timeline-item-title">Costureiro</h4>
+
+              <span>Mai 2021 - Mai 2022</span>
+
+              <p class="timeline-text">
+                Atuei em linha de produção e como ajudante de confecção, garantindo a eficiência dos processos e o
+                cumprimento das metas de produção.
+              </p>
+
+            </li>
+          </ol>
+
+          </ol>
+
         </section>
-      
+
         <section class="skill">
-      
+
           <h3 class="h3 skills-title">Minhas Habilidades</h3>
-      
+
           <ul class="skills-list content-card">
-      
+
             <li class="skills-item">
-      
+
               <div class="title-wrapper">
                 <h5 class="h5">Desenvolvimento Web</h5>
                 <data value="80">80%</data>
               </div>
-      
+
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-      
+
             </li>
-      
+
             <li class="skills-item">
-      
+
               <div class="title-wrapper">
                 <h5 class="h5">Desenvolvimento Desktop</h5>
                 <data value="60">60%</data>
               </div>
-      
+
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
-      
+
             </li>
-      
+
             <li class="skills-item">
-      
+
               <div class="title-wrapper">
                 <h5 class="h5">Infraestrutura</h5>
                 <data value="90">90%</data>
               </div>
-      
+
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
-      
+
             </li>
-    
+
           </ul>
-      
+
         </section>
-      
+
       </article>
 
       <!--
@@ -680,9 +737,9 @@
         <header>
           <h2 class="h2 article-title">Portfólio</h2>
         </header>
-      
+
         <section class="projects">
-      
+
           <!-- <ul class="filter-list">
       
             <li class="filter-item">
@@ -702,9 +759,9 @@
             </li>
       
           </ul> -->
-      
+
           <div class="filter-select-box">
-      
+
             <!-- <button class="filter-select" data-select>
       
               <div class="select-value" data-selecct-value>Selecionar categoria</div>
@@ -714,7 +771,7 @@
               </div>
       
             </button> -->
-      
+
             <!-- <ul class="select-list">
       
               <li class="select-item">
@@ -734,68 +791,68 @@
               </li>
       
             </ul> -->
-      
+
           </div>
-      
+
           <ul class="project-list">
-      
+
             <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-      
+              <a href="#" class="open-modal" data-img="./assets/images/project-2.png">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-      
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-      
-                <h3 class="project-title">Controle de estoque</h3>
-      
-                <p class="project-category">Desenvolvimento Web</p>
-      
-              </a>
-            </li>
-      
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-      
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-      
+
                   <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
-      
+
                 <h3 class="project-title">Projeto ressaquei</h3>
-      
+
                 <p class="project-category">Desenvolvimento Web</p>
-      
+
               </a>
             </li>
-      
-            <!-- <li class="project-item active" data-filter-item data-category="web design">
-              <a href="#">
-      
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" class="open-modal" data-img="./assets/images/project-3.jpg">
+
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-      
+
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
-      
+
                 <h3 class="project-title">Projeto comandas</h3>
-      
-                <p class="project-category">Design Web</p>
-      
+
+                <p class="project-category">Desenvolvimento Web</p>
+
               </a>
-            </li> -->
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" class="open-modal" data-img="./assets/images/project-1.jpg">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Controle de estoque</h3>
+
+                <p class="project-category">Desenvolvimento Web</p>
+
+              </a>
+            </li>
           </ul>
-      
+
         </section>
-      
+
       </article>
 
       <!--
@@ -973,7 +1030,7 @@
         </section>
       
       </article> -->
-      
+
 
       <!--
         - #CONTACT
@@ -1017,7 +1074,7 @@
         </section>
       
       </article> -->
-      
+
 
     </div>
 
@@ -1033,6 +1090,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
 </body>
 

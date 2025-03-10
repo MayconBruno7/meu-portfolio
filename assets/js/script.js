@@ -156,4 +156,29 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+
+
+// controla o modal de visualização de imagem
+  const modal = document.getElementById("customModal");
+  let modalImgem = document.getElementById("customModalImage");
+  const closeBtn = document.querySelector(".custom-modal-close");
+
+  document.querySelectorAll(".open-modal").forEach(item => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      const imgSrc = this.getAttribute("data-img");
+      modalImgem.src = imgSrc;
+      modal.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
 }
